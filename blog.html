@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="estilos/blog.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <h1>Mi Blog Personal</h1>
+        <p>Bienvenidos a mi blog, donde comparto mis pensamientos y conocimientos sobre tecnología y desarrollo web.</p>
+
+        <!-- Artículos del blog -->
+        <section class="articles">
+            <!-- Artículo 1 -->
+            <article class="article fade-up">
+                <img src="https://th.bing.com/th/id/R.cdbde51db82977e11d71f8d232f97cde?rik=MtybsdqRm6J%2f%2fA&pid=ImgRaw&r=0" alt="Imagen artículo 1" class="article-image" />
+                <h2>Experiencias</h2>
+                <p>En este artículo, comparto algunas de mis experiencias como desarrollador de software, desde mis primeros pasos en el mundo de la programación hasta los desafíos que he enfrentado al trabajar en proyectos más complejos. Hablaré sobre las herramientas que me han ayudado a mejorar mi productividad, las metodologías ágiles que he implementado en los equipos en los que he trabajado, y los errores que he cometido para que puedas evitarlos. Además, te daré algunos consejos prácticos que considero esenciales para nuevos programadores, como la importancia de la constancia, la práctica diaria y cómo encontrar tu propio estilo de programación.</p>
+                <a href="https://www.freecodecamp.org/news/" class="read-more">Leer más</a>
+            </article>
+
+            <!-- Artículo 2 -->
+            <article class="article fade-up">
+                <img src="https://ladocumentacionaldia.com/wp-content/uploads/2020/08/estudiar-programador-8-1024x683.jpg" alt="Imagen artículo 2" class="article-image" />
+                <h2>Tendencias</h2>
+                <p>En este artículo, profundizo en las tendencias más relevantes que están marcando el futuro del desarrollo web en este momento. Desde el auge de los frameworks de JavaScript como React, Angular y Vue.js, hasta la creciente importancia de las Progressive Web Apps (PWA) y la implementación de tecnologías como WebAssembly. También exploraré las herramientas que están revolucionando el flujo de trabajo de los desarrolladores, como los editores de código más populares, las plataformas de control de versiones y la integración continua. Además, hablaré sobre la transición hacia el desarrollo web móvil y la importancia de diseñar pensando en dispositivos móviles. Este artículo es ideal para aquellos desarrolladores que buscan estar al día con las tecnologías más innovadoras en la industria.</p>
+                <a href="https://www.smashingmagazine.com/" class="read-more">Leer más</a>
+            </article>
+
+            <!-- Artículo 3 -->
+            <article class="article fade-up">
+                <img src="https://www.hostmidia.com.br/img/blog/upload/xg-como-aprender-a-programar.jpg" alt="Imagen artículo 3" class="article-image" />
+                <h2>Aprende a Crear</h2>
+                <p>Si siempre has querido aprender a crear aplicaciones web pero no sabías por dónde empezar, este artículo es para ti. Te guiaré paso a paso a través de los fundamentos de la programación web, comenzando con HTML para estructurar tu contenido, luego pasando a CSS para darle estilo y hacerlo atractivo, y finalmente incorporando JavaScript para agregar interactividad. A lo largo del tutorial, verás ejemplos prácticos que podrás probar en tu propio navegador y consejos para superar los obstáculos más comunes que enfrentan los principiantes. Al final del artículo, tendrás las bases para crear tu primera aplicación web sencilla y funcional, ¡perfecta para empezar a construir tu portafolio como desarrollador web!</p>
+                <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web" class="read-more">Leer más</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; <span id="date"></span> - Britez Gustavo</p>
+    </footer>
+
+    <script>
+        // Actualiza la fecha automáticamente en el pie de página
+        document.getElementById("date").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <p>Esta es la página principal. Aquí puedes explorar varias secciones donde te cuento más sobre mí, mi trabajo, y mis proyectos.</p>
+        
+        <!-- Descripción de las demás páginas -->
+        <section class="description">
+            <h2>Secciones del Sitio</h2>
+            <ul>
+                <li><strong>Perfil Personal:</strong> Descubre quién soy, mis habilidades y cómo puedes contactarme.</li>
+                <li><strong>Portafolio de Imágenes:</strong> Mira algunas de mis mejores imágenes y proyectos visuales.</li>
+                <li><strong>Blog Personal:</strong> Lee sobre mis experiencias y aprendizajes en el mundo del desarrollo web.</li>
+                <li><strong>Proyectos Interactivos:</strong> Explora proyectos interactivos con tecnologías modernas.</li>
+                <li><strong>Biblioteca Personal:</strong> Mis libros favoritos y recomendaciones para desarrolladores y entusiastas de la tecnología.</li>
+            </ul>
+        </section>
+
+        <!-- Botones animados -->
+        <section class="buttons">
+            <button class="animated-button" onclick="window.location.href='perfil.html'">Ver Perfil</button>
+            <button class="animated-button" onclick="window.location.href='portafolio.html'">Portafolio</button>
+            <button class="animated-button" onclick="window.location.href='blog.html'">Blog</button>
+            <button class="animated-button" onclick="window.location.href='proyectos.html'">Proyectos</button>
+            <button class="animated-button" onclick="window.location.href='biblioteca.html'">Biblioteca</button>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; <span id="date"></span> - Britez Gustavo</p>
+    </footer>
+
+    <script>
+        // Actualiza la fecha automáticamente en el pie de página
+        document.getElementById("date").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

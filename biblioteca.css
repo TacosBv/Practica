@@ -1,0 +1,173 @@
+    /* Reset de márgenes y paddings */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra negra para todo el texto */
+    }
+
+    /* Establecer imagen de fondo para todas las páginas */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-image: url('https://assets2.razerzone.com/images/downloads-page/desktop-wallpapers/products/RZR_Product-Trailers_Wallpaper_RazerKrakenV3_1920x1080.jpg?_ga=2.87815064.1497954333.1731601098-1382229369.1731601097');
+        background-size: cover;  /* Asegura que la imagen cubra toda la pantalla */
+        background-position: center;  /* Centra la imagen */
+        background-attachment: fixed;  /* Fija la imagen de fondo cuando se hace scroll */
+        color: #ffffff;
+        line-height: 1.6;
+        min-height: 100vh;  /* Asegura que el cuerpo ocupe al menos el 100% de la altura */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  /* Centra el contenido verticalmente */
+        align-items: center;  /* Centra el contenido horizontalmente */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra negra para todo el texto */
+    }
+
+    /* Menú de navegación */
+    header {
+        background-color: #02a418cd;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    header nav ul li {
+        margin: 0 20px;
+    }
+
+    header nav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);  /* Sombra para los enlaces */
+    }
+
+    header nav ul li a:hover {
+        color: #000000;
+    }
+
+    /* Estilo para el contenido principal */
+    main {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    /* Título principal */
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);  /* Sombra fuerte en el título */
+    }
+
+    /* Descripción de los proyectos interactivos */
+    p {
+        font-size: 20px;
+        margin-bottom: 40px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra para los párrafos */
+    }
+
+    /* Lista de libros */
+    .book-list {
+        list-style-type: decimal;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .book-item {
+        margin-bottom: 30px;
+    }
+
+    .book-title {
+        font-size: 24px;
+        font-weight: bold;
+        background-color: #3d9c02;
+        color: white;
+        padding: 10px;
+        border: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra para el título del libro */
+    }
+
+    .book-title:hover {
+        background-color: #b5d500;
+    }
+
+    /* Detalles del libro */
+    .book-details {
+        display: none;
+        padding: 15px;
+        margin-top: 10px;
+        background-color: #030303af;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .book-image {
+        width: 100px;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+   /* Descripción de los libros */
+.book-summary {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 800px;
+    max-height: 200px;
+    animation: typing 3s steps(480) 1s forwards, blink-caret 0.75s step-end infinite;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    overflow-y: auto;
+    visibility: visible; /* Asegura que el texto permanezca visible */
+    width: 0; /* Inicia con un ancho de 0 */
+}
+
+/* Animación de escritura lenta */
+@keyframes typing {
+    0% {
+      width: 0;
+      visibility: visible; 
+    }
+    100% {
+      width: 100%;
+      visibility: visible; 
+    }
+  }
+   /* Pie de página */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1px 0;
+        background-color: #1ea104bd;
+        color: white;
+        width: 100%;
+        position: fixed; /* Fija el pie de página al fondo de la ventana */
+        bottom: 0; /* Lo posiciona en la parte inferior de la ventana */
+        left: 0;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 14px;
+    }
